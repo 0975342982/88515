@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+Template Name: Lacegant
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>我4嘎理屋(老闆帥到吐)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="/static/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace inline pushright">
+        <li><i class="fa fa-sign-in"></i> <a href="#">嘎理</a></li>
+        <li><i class="fa fa-user"></i> <a href="#">好ㄘR</a></li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace inline pushright">
+        <li><i class="fa fa-phone"></i> 090806449</li>
+        <li><i class="fa fa-envelope-o"></i> eatme@gmail.com</li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <h1>我4嘎里屋 - 我家嘎理夭壽好ㄘ不4我在縮辣</h1>
+      <p>然而並沒有神抹路用的副標題</p>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+          {% if user.is_authenticated %}
+            <li><a href="/home">首頁-我4嘎理屋</a></li>
+            <li><a href="/diary/add">縮縮你ㄘ的感覺</a></li>
+            <li><a href="/money/add">縮縮你ㄘ了多少錢</a></li>
+            <li><a href="/logout">嘎理屋會員登出</a></li>
+          {% endif %}
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="active"><a href="full-width.html">Full Width</a></li>
+          <li><a href="sidebar-left.html">Sidebar Left</a></li>
+          <li><a href="sidebar-right.html">Sidebar Right</a></li>
+          <li><a href="basic-grid.html">Basic Grid</a></li>
+        </ul>
+
+      
+        </ul>
+      </li>
+
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+        {% block content %}
+        {% endblock %}
+
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="title">如何找到我4嘎理屋</h6>
+      <ul class="nospace linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          三民路一段,不知道幾號,台中
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> 0985431984<br>
+          +04 26597318</li>
+        <li><i class="fa fa-fax"></i> +00 (458) 164 5720</li>
+        <li><i class="fa fa-envelope-o"></i>eatme@gmail.com</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">賀甲嘎理菜單</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">夭壽賀甲嘎理香酥租排飯 NTD350</a></li>
+        <li><a href="#">夭壽辣閻羅王級嘎理飯 NTD270(目前優惠200)</a></li>
+        <li><a href="#">夭壽歹甲地獄黑暗嘎理飯 NTD250</a></li>
+        <li><a href="#">夭壽Q彈鮮嫩嘎理G排飯 NTD350</a></li>
+        <li><a href="#">夭壽多菜不怕便祕的鮮蔬嘎理飯 NTD280</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">緊來預約</h6>
+      <p class="btmspace-20">想要來體會窩們家的嘎理嗎?快點給我填資料來預約ㄛ 送出後有專人為你服務ㄛ</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="哩欸大名">
+          <input class="btmspace-15" type="text" value="" placeholder="哩欸手雞">
+          <button type="submit" value="submit">送出</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">關於我4嘎理屋欸23事</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">胃蝦米想要開嘎理屋</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-06">因為愛 <3 </time>
+            <p class="nospace">當你向老闆我吼 辣抹愛ㄘ嘎理你就知道</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">顧客:哩欸嘎理好ㄘㄇ???</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-05">我勸你們4不要問題辣抹多ㄛ</time>
+            <p class="nospace">老闆:阿你4不會來ㄘㄘ看ㄛ 嘎哩共金甲好ㄘ</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="../layout/scripts/jquery.placeholder.min.js"></script>
+<!-- / IE9 Placeholder Support -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <br>
+        {% for month in months %}
+                {{month.date}}<a href="/diary/{{month.date}}">我可愛ㄉ客人們的ㄘ嘎理感想</a>|<a href="/money/{{month.date}}">我可愛ㄉ客人們都ㄘ些神抹口味的嘎理ㄋ</a>
+        {% endfor %}
+{% endblock %}

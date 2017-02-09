@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>ㄘ嘎理屋的感想：{{month}}</h1>
+<a href="/diary/word/{{month}}">匯出感想帶著跑R</a><BR>
+{% for diary in diaries %}
+{{diary.time}}--{{diary.memo}}<BR>
+{% endfor %}
+{% endblock %}
